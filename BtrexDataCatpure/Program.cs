@@ -47,8 +47,7 @@ namespace BtrexDataCapture
 
 
         static async Task RunAsync()
-        {
-
+        {            
             BtrexData.NewData();
             
             Console.Write("Connecting websocket1...");
@@ -60,6 +59,7 @@ namespace BtrexDataCapture
             Console.Write("Connecting websocket3...");
             await websocket3.Connect();
             Console.WriteLine("DONE");
+
             await websocket1.SubscribeMarketsList(SubSpecificDeltas1.ToList());
             await websocket2.SubscribeMarketsList(SubSpecificDeltas2.ToList());
             await websocket3.SubscribeMarketsList(SubSpecificDeltas3.ToList());
