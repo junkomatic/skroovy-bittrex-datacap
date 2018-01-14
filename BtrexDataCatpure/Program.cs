@@ -67,8 +67,7 @@ namespace BtrexDataCapture
 
             //START DATA THREAD
             await BtrexData.StartDataUpdates();
-
-
+            
          
 
             Console.WriteLine("\r\n\r\n-PRESS ENTER 3 TIMES TO EXIT-\r\n\r\n");
