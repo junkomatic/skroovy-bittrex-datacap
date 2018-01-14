@@ -50,8 +50,7 @@ namespace BtrexDataCapture
         {
 
             BtrexData.NewData();
-
-
+            
             Console.Write("Connecting websocket1...");
             await websocket1.Connect();
             Console.WriteLine("DONE");
